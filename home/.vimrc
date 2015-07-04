@@ -51,3 +51,13 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 
 nmap <silent> ,/ :nohlsearch<CR>  " clear search highlighting
+
+" CtrlP plugin shortcut
+let g:ctrlp_map = '<C-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Folding (default is {{{ to start and }}} to end)
+set foldmethod=marker
+
+" search for word selected in visual mode
+vnoremap // y/<C-R>"<CR>

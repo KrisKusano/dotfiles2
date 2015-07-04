@@ -72,6 +72,7 @@ xterm*|rxvt*)
     ;;
 esac
 
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -148,12 +149,6 @@ function settitle() {
   echo -ne "\e]2;$t\a\e]1;$t\a";
 }
 
-# determine host name
-hn="@${HOSTNAME}"
-if [[ $hn == "@SBES-PB00FV0Z" ]]; then
-  hn=""
-fi
-
 # bash shorten dir
 PROMPT_DIRTRIM=2
 PROMPT_COMMAND='settitle; git_branch; history -a;'
@@ -163,4 +158,10 @@ export PS1='\[\e${usercolor}\][\u${hn}]\[\e${gitcolor}\]${gitbranch}\[\e${cwdcol
 # from https://github.com/andsens/homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
+# have to force this over putty?
+#LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35'
+#export LS_COLORS
 
+# for lwdr library in python:
+# http://wcms.inf.ed.ac.uk/ipab/slmc/research/software-lwpr
+export LD_LIBRARY_PATH=/usr/local/lib
