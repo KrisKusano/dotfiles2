@@ -29,6 +29,8 @@ if &t_Co > 2 || has("gui_running")
 endif
 
 " basic settings
+filetype on       " try to detect file type
+filetype plugin indent on " enable loading indent file by file type
 set nowrap
 set tabstop=4
 set autoindent
@@ -61,3 +63,24 @@ set foldmethod=marker
 
 " search for word selected in visual mode
 vnoremap // y/<C-R>"<CR>
+
+" shortcut for tasklist plugin
+map <leader>td <Plug>TaskList
+
+" settings for pyflakes
+let g:pyflakes_use_quickfix = 0
+
+" settings for pep8
+let g:pep8_map='<leader>8'
+
+" supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+
+" NERD Tree
+map <leader>n :NERDTreeToggle<CR>
+
+" Ropevim
+map <leader>j :RopeGotoDefinition<CR>
+map <leader>r :RopeRename<CR>
