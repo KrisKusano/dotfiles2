@@ -81,6 +81,3 @@ set completeopt=menuone,longest,preview
 " NERD Tree
 map <leader>n :NERDTreeToggle<CR>
 
-" Ropevim
-map <leader>j :RopeGotoDefinition<CR>
-map <leader>r :RopeRename<CR>
