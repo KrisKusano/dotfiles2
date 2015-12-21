@@ -1,8 +1,7 @@
 #!/bin/bash
-# run: eval $(./proxy_export.sh)
-proxip=10.25.255.27
-proxport=8080
-proxuser=kkusano
+# run: eval $(./proxy_export.sh proxyuser)
+proxip=tmnaproxy.gtm.tema.toyota.com
+proxport=80
 
 # replace a special chars with percent encoding
 percentencode() {
@@ -44,8 +43,8 @@ while true; do
   read -p "Type in LDAP password: " proxpass
   proxpass=$(percentencode $proxpass)
   if [[ ! -z "$proxpass" ]]; then
-	echo export http_proxy=http://${proxuser}:${proxpass}@${proxip}:${proxport};
-	echo export https_proxy=https://${proxuser}:${proxpass}@${proxip}:${proxport};
-	break 
+	echo export http_proxy=http://$1:${proxpass}@${proxip}:${proxport};
+	echo export https_proxy=https://$1:${proxpass}@${proxip}:${proxport};
+	break
   fi
 done
