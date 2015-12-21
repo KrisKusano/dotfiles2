@@ -81,3 +81,8 @@ set completeopt=menuone,longest,preview
 " NERD Tree
 map <leader>n :NERDTreeToggle<CR>
 
+" Add snippets direction to runtimepath
+let &runtimepath.=",~/.vim/snippets"
+let g:snips_author="Kris Kusano"
+let g:snips_email="kris.kusano@toyota.com"
+let g:snips_github="https://github.com/KrisKusano"
