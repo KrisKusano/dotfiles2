@@ -133,7 +133,7 @@ function ttyname() { export TTYNAME=$@; }
 
 # Set prompt and window title
 inputcolor='[0;37m'
-cwdcolor='[0;34m'
+cwdcolor='[0;92m'
 gitcolor='[1;31m'
 usercolor='[0;32m'
 
