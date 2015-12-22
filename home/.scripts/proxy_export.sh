@@ -1,7 +1,12 @@
 #!/bin/bash
 # run: eval $(./proxy_export.sh proxyuser)
-proxip=tmnaproxy.gtm.tema.toyota.com
-proxport=80
+
+# the new one doesn't work?!
+# proxip=tmnaproxy.gtm.tema.toyota.com
+# proxport=80
+
+proxip=http://10.25.255.27
+proxport=8080
 
 # replace a special chars with percent encoding
 percentencode() {

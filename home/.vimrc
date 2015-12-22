@@ -18,9 +18,12 @@ vnoremap v <Esc>
 
 " set my color theme
 if &t_Co >= 256 || has("gui_running")
-    "colorscheme gruvbox
-    "set background=dark " dark/light setting for gruvbox
-    colorscheme smyck
+	"colorscheme gruvbox
+	"set background=dark " dark/light setting for gruvbox
+	colorscheme smyck
+	"colorscheme zenburn
+	"set background=dark
+	"colorscheme solarized
 endif
 
 if &t_Co > 2 || has("gui_running")
