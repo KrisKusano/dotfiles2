@@ -93,3 +93,4 @@ let g:snips_github="https://github.com/KrisKusano"
 " airline
 set laststatus=2  " always show bar
 let g:airline_theme='murmur'
+let g:airline_powerline_fonts=1  " for linux
