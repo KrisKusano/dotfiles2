@@ -89,3 +89,7 @@ let &runtimepath.=",~/.vim/snippets"
 let g:snips_author="Kris Kusano"
 let g:snips_email="kris.kusano@toyota.com"
 let g:snips_github="https://github.com/KrisKusano"
+
+" airline
+set laststatus=2  " always show bar
+let g:airline_theme='murmur'

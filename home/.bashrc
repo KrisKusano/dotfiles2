@@ -162,6 +162,5 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 #LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35'
 #export LS_COLORS
 
-# for lwdr library in python:
-# http://wcms.inf.ed.ac.uk/ipab/slmc/research/software-lwpr
-export LD_LIBRARY_PATH=/usr/local/lib
+# added by Anaconda3 4.3.1 installer
+export PATH="/home/local/kk/anaconda3/bin:$PATH"
